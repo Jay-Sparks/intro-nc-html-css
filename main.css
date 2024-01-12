@@ -6,7 +6,7 @@ body {
 .containerMain {
     display: grid;
     grid-template-rows: 20rem 30rem 30rem 8rem;
-    grid-template-columns: 2fr 10fr 10fr 2fr;
+    grid-template-columns: 1fr 10fr 10fr 1fr;
     grid-gap: 1rem;
     grid-template-areas: 
         "header"
@@ -36,16 +36,12 @@ body {
     grid-column: 2 / 4;
 }
 
-
-/* grid areas */
-
-
 section {
     margin: auto;
 }
 
 header {
-    /* display: flex; */
+
     margin: 3rem auto 0;
 }
 
@@ -54,17 +50,27 @@ h1 {
     font-family: "Lucida Console", monospace;
 }
 
+h5 {
+    font-family: "Courier New", monospace;
+    width: 16rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
 h2, h3, h4 {
     font-family: "Lucida Console", monospace;
     margin-bottom: 2rem;
+    width: 80%;
 }
 
 p {
     font-family: "Courier New", monospace;
+    overflow: hidden;
 }
 
 img {
     height: 20rem;
+    margin: 1rem auto;
 }
 
 .textLeft {
@@ -73,6 +79,7 @@ img {
     font-size: 1rem;
     text-align: left;
     width: 50%;
+    height: 19.5rem;
 }
 
 .textRight {
@@ -81,6 +88,7 @@ img {
     font-size: 1rem;
     text-align: right;
     width: 50%;
+    height: 19.5rem;
 }
 
 a{
@@ -91,7 +99,7 @@ a{
 
 .roundImage {
     border-radius: 16rem;
-    height: 16rem;
+    height: 14rem;
     border-style: groove;
 }
 
@@ -110,12 +118,6 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-h5 {
-    font-family: "Courier New", monospace;
-    width: 16rem;
-    text-align: center;
 }
 
 h4 {
@@ -142,7 +144,34 @@ ul a{
 footer {
     display: flex;
     flex-direction: column;
+    
     align-items: center;
     padding: 2rem;
     background-color: #203354;
 }
+
+@media only screen and (max-width: 768px) {
+    .containerMain {
+        grid-template-rows: 34rem auto auto 8rem;
+    }
+    footer {
+        background-color: black;
+    }
+    .flexHorizontal {
+        flex-direction: column;
+    }
+    .textLeft {
+        width: 100%;
+    }
+    .textRight {
+        width: 100%;
+    }
+    .roundImage {
+        height: 20rem;
+    }
+    h2, h3, h4 {
+        width: 100%;
+        margin: auto;
+    }
+
+  }
