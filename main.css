@@ -1,0 +1,92 @@
+body {
+    background-color: #ececec;
+    margin: 0;
+}
+
+section {
+    margin: auto;
+    padding: 3rem;
+    width: 85%;
+}
+
+header {
+    display: flex;
+    width: 80%;
+    margin: 3rem auto 0;
+}
+
+h1 {
+    margin: auto;
+    font-family: "Lucida Console", monospace;
+}
+
+h2, h3, h4 {
+    font-family: "Lucida Console", monospace;
+    padding-bottom: 2rem;
+}
+
+img {
+    width: auto;
+    height: 24rem;
+}
+
+p {
+    font-family: "Courier New", monospace;
+}
+
+.textLeft {
+    line-height: 1.6rem;
+    margin-right: 1rem;
+}
+
+.textRight {
+    line-height: 1.6rem;
+    margin-left: 1rem;
+    text-align: right;
+}
+
+a{
+    color: #203354;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.roundImage {
+    border-radius: 16rem;
+    height: 12rem;
+}
+
+.roundedBorder {
+    border-radius: 4rem;
+    border-style: groove;
+    height: 24rem;
+}
+
+.flexHorizontal {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flexVertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    color: white;
+}
+
+ul a{
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    height: 12rem;
+    background-color: #203354;
+}
