@@ -3,15 +3,49 @@ body {
     margin: 0;
 }
 
+.containerMain {
+    display: grid;
+    grid-template-rows: 20rem 30rem 30rem 8rem;
+    grid-template-columns: 2fr 10fr 10fr 2fr;
+    grid-gap: 1rem;
+    grid-template-areas: 
+        "header"
+        "section-1"
+        "section-2"
+        "footer"
+    ;
+    justify-items: center;
+
+}
+
+.item-1 {
+    grid-row: span 1;
+    grid-column: 2 / 4;
+}
+
+.item-2 {
+    grid-row: span 1;
+    grid-column: 2 / 4;
+}
+.item-3 {
+    grid-row: span 1;
+    grid-column: 2 / 4;
+}
+.item-4 {
+    grid-row: span 1;
+    grid-column: 2 / 4;
+}
+
+
+/* grid areas */
+
+
 section {
     margin: auto;
-    padding: 3rem;
-    width: 85%;
 }
 
 header {
-    display: flex;
-    width: 80%;
+    /* display: flex; */
     margin: 3rem auto 0;
 }
 
@@ -22,27 +56,31 @@ h1 {
 
 h2, h3, h4 {
     font-family: "Lucida Console", monospace;
-    padding-bottom: 2rem;
-}
-
-img {
-    width: auto;
-    height: 24rem;
+    margin-bottom: 2rem;
 }
 
 p {
     font-family: "Courier New", monospace;
 }
 
+img {
+    height: 20rem;
+}
+
 .textLeft {
-    line-height: 1.6rem;
-    margin-right: 1rem;
+    line-height: 1.3rem;
+    font-weight: 520;
+    font-size: 1rem;
+    text-align: left;
+    width: 50%;
 }
 
 .textRight {
-    line-height: 1.6rem;
-    margin-left: 1rem;
+    line-height: 1.3rem;
+    font-weight: 520;
+    font-size: 1rem;
     text-align: right;
+    width: 50%;
 }
 
 a{
@@ -53,24 +91,31 @@ a{
 
 .roundImage {
     border-radius: 16rem;
-    height: 12rem;
+    height: 16rem;
+    border-style: groove;
 }
 
 .roundedBorder {
-    border-radius: 4rem;
+    border-radius: 2rem;
     border-style: groove;
-    height: 24rem;
 }
 
 .flexHorizontal {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .flexVertical {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+h5 {
+    font-family: "Courier New", monospace;
+    width: 16rem;
+    text-align: center;
 }
 
 h4 {
@@ -81,12 +126,23 @@ ul a{
     color: white;
 }
 
+.wiki {
+    width: 12rem;
+    margin: 2rem auto;
+    background-color: coral;
+    color: white;
+    font-weight: 600;
+    font-family: "Courier New", monospace;
+    padding: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    width: 100%;
-    height: 12rem;
     background-color: #203354;
 }
